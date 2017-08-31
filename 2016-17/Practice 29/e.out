@@ -1,0 +1,50 @@
+Range 0 to 8:
+Fib(0) = 0, lg does not exist
+No prime factors
+Fib(1) = 1, lg is 0.000000
+No prime factors
+Fib(2) = 1, lg is 0.000000
+No prime factors
+Fib(3) = 2, lg is 1.000000
+Prime factors: 2
+Fib(4) = 3, lg is 1.584963
+Prime factors: 3
+Fib(5) = 5, lg is 2.321928
+Prime factors: 5
+Fib(6) = 8, lg is 3.000000
+Prime factors: 2 2 2
+
+Range 9 to 12:
+No Fibonacci numbers in the range
+
+Range 9 to 32:
+Fib(7) = 13, lg is 3.700440
+Prime factors: 13
+Fib(8) = 21, lg is 4.392317
+Prime factors: 3 7
+
+Range 23362423066984448 to 288230376151711744:
+Fib(80) = 23416728348467685, lg is 54.378389
+Prime factors: 3 5 7 11 41 47 1601 2161 3041
+Fib(81) = 37889062373143906, lg is 55.072631
+Prime factors: 2 17 53 109 2269 4373 19441
+Fib(82) = 61305790721611591, lg is 55.766873
+Prime factors: 2789 59369 370248451
+Fib(83) = 99194853094755497, lg is 56.461115
+Prime factors: 99194853094755497
+Fib(84) = 160500643816367088, lg is 57.155357
+Prime factors: 2 2 2 2 3 3 13 29 83 211 281 421 1427
+Fib(85) = 259695496911122585, lg is 57.849599
+Prime factors: 5 1597 9521 3415914041
+
+Range 2810246167479189504 to 9223372036854775807:
+Fib(90) = 2880067194370816120, lg is 61.320808
+Prime factors: 2 2 2 5 11 17 19 31 61 181 541 109441
+Fib(91) = 4660046610375530309, lg is 62.015050
+Prime factors: 13 13 233 741469 159607993
+Fib(92) = 7540113804746346429, lg is 62.709292
+Prime factors: 3 139 461 4969 28657 275449
+
+Range 9223372036854775806 to 9223372036854775807:
+No Fibonacci numbers in the range
+

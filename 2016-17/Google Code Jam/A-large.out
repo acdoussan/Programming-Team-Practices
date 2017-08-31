@@ -1,0 +1,8 @@
+Case #1: 3
+Case #2: 0
+Case #3: IMPOSSIBLE
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1631584256 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/adam/Dropbox/linuxWorkspace/Programming team practices/Google Code Jam/hs_err_pid6995.log

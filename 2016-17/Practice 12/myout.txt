@@ -1,0 +1,151 @@
+Example 1
+1 12344 A 1
+12345 12345 B 1
+12346 100000 A 1
+Example 2
+1 12344 A 1
+12345 12345 B 2
+12346 12999 A 2
+13000 100000 A 1
+Example 3
+1 9999 A 1
+10000 100000 C 2
+100001 100000 A 1
+Example 4
+1 999999 A 1
+1000000 1999999 Z 99
+2000000 100000 A 1
+Example 5
+1 20 A 1
+21 30 B 1
+31 10 A 1
+Example 6
+1 10 A 1
+11 20 A 2
+21 30 B 1
+Example 7
+1 10 A 1
+12 20 A 1
+21 30 B 1
+31 20 A 1
+case 01 - single node insertion
+1 10 A 1
+case 02 - inserting new head of list
+1 10 A 2
+11 20 A 1
+case 03 - new head, matching codes, not sequential
+1 9 A 1
+11 20 A 1
+case 04 - new head, matching codes, sequential
+1 20 A 1
+case 05 - new head, overlaps old head, non-matching codes
+1 11 A 2
+12 20 A 1
+case 06 - new head, overlaps old head, matching codes
+1 20 A 1
+case 07 - new head overlaps head and part of second node
+2 11 A 2
+1 15 B 1
+16 20 A 1
+case 08 - new head overlaps everything #1
+2 11 A 2
+12 20 A 1
+1 25 B 1
+case 09 - new head overlaps everything #2
+11 80 A 1
+81 90 H 1
+91 20 A 1
+1 100 Z 1
+case 10 - new tail, not sequential
+1 10 A 1
+case 11 - new tail, sequential, non-matching codes
+1 10 A 1
+11 20 A 2
+21 10 A 1
+case 12 - new tail, sequential, matching codes
+1 10 A 1
+case 13 - new node in unused space #1
+1 10 A 1
+11 20 B 1
+21 21 A 1
+22 30 C 1
+31 9 A 1
+case 14 - new node in unused space #2
+1 10 A 1
+11 20 B 1
+21 30 C 1
+31 10 A 1
+case 15 - new node in unused space merges with predecessor
+1 20 A 1
+21 30 C 1
+31 10 A 1
+case 16 - new node in unused space merges with successor
+1 10 A 1
+11 30 C 1
+31 10 A 1
+case 17 - new node in unused space merges with both neighbors
+1 10 A 1
+case 18 - new node partially overlaps both adjacent nodes
+2 4 A 2
+5 15 B 1
+16 20 A 1
+case 19 - replace node
+1 10 C 1
+11 20 B 1
+21 10 A 1
+case 20 - extend node
+1 20 C 1
+21 30 B 1
+31 10 A 1
+case 21 - single split #1
+1 10 A 1
+11 15 A 4
+16 20 A 1
+21 30 A 3
+31 10 A 1
+case 22 - single split #2
+1 14 A 1
+15 20 A 4
+21 30 A 3
+31 10 A 1
+case 23 - single split #3
+1 24 A 1
+25 35 A 4
+36 10 A 1
+case 24 - double split
+1 13 A 1
+14 17 A 4
+18 20 A 1
+21 30 A 3
+31 10 A 1
+case 25 - exercise ranges
+1 25 A 1
+26 2147483647 Z 2147483647
+-2147483648 1 A 1
+case 26 - random #1: lots of merges
+1 4 A 2
+5 29 B 1
+30 69 A 2
+70 97 A 1
+98 99 B 2
+100 100 A 2
+101 88 A 1
+case 27 - random #2: few merges
+2 30 U 249
+31 89 Y 588
+90 98 S 533
+99 98 Z 765
+99 99 X 395
+100 100 H 602
+101 91 K 883
+case 28 - random #3: 100 large range transactions
+30982640 1585476056 J 381254719
+1585476057 1917677723 B 1244447103
+1917677724 2126055361 R 353630764
+2126055362 2129919557 E 1203782074
+2129919558 2136775671 I 402426449
+2136775672 1118314917 L 924284954
+case 29 - 100 unique records
+1 2126008764 A 1
+2126008765 2147483647 A 100
+-2147483648 21474836 A 1

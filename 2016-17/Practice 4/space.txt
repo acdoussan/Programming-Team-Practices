@@ -1,0 +1,3 @@
+ArrayList<Node> temp = faster.get(right);
+					temp.add(test.right);
+					faster.put(right, temp);
